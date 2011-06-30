@@ -1,0 +1,14 @@
+diff -ru vzdump_2011-06-17.orig/VZDump.pm vzdump_2011-06-17/VZDump.pm
+--- vzdump_2011-06-17.orig/VZDump.pm	2011-06-17 17:18:41.000000000 +0200
++++ vzdump_2011-06-17/VZDump.pm	2011-06-30 12:41:41.000000000 +0200
+@@ -358,7 +358,9 @@
+     my $pid = open (TMP, "tar tf '$archive'|") ||
+ 	die "unable to open file '$archive'\n";
+     my $firstfile = <TMP>;
+-    kill 15, $pid;
++    # what for is this #$$@#$ing kill here !?
++    # vzrestore doesn't work with this
++    # kill 15, $pid;
+     close TMP;
+ 
+     die "ERROR: archive contaions no data\n" if !$firstfile;
