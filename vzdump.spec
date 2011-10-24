@@ -1,6 +1,7 @@
 %define 	reldate	2011-09-13
 %define 	subver	15
 %define		rel		1
+%include	/usr/lib/rpm/macros.perl
 Summary:	OpenVZ backup scripts
 Summary(pl.UTF-8):	Skrypty do backupu kontenerów OpenVZ
 Name:		vzdump
@@ -12,9 +13,8 @@ Group:		Applications/System
 Source0:	http://download.proxmox.com/sources/%{name}_%{reldate}.tar.gz
 # Source0-md5:	efed9fc7b6851cbd4537627bc8c715b0
 URL:		http://www.proxmox.com/cms_proxmox/en/virtualization/openvz/vzdump/
+BuildRequires:	rpm-perlprov >= 4.1-13
 Requires:	cstream
-Requires:	perl
-Requires:	perl(LockFile::Simple)
 Requires:	rsync
 Requires:	smtpdaemon
 Requires:	vzctl
