@@ -1,7 +1,6 @@
 %define 	reldate	2011-09-13
 %define 	subver	15
 %define		rel		1
-%include	/usr/lib/rpm/macros.perl
 Summary:	OpenVZ backup scripts
 Summary(pl.UTF-8):	Skrypty do backupu kontenerów OpenVZ
 Name:		vzdump
