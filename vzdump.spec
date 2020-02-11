@@ -8,7 +8,7 @@ Version:	1.2
 Release:	0.%{subver}.%{rel}
 License:	GPL v2
 Group:		Applications/System
-#Source0:	ftp://ftp.debian.org/debian/pool/main/v/vzdump/%{name}_%{version}.orig.tar.gz
+#Source0:	http://ftp.debian.org/debian/pool/main/v/vzdump/%{name}_%{version}.orig.tar.gz
 Source0:	http://download.proxmox.com/sources/%{name}_%{reldate}.tar.gz
 # Source0-md5:	efed9fc7b6851cbd4537627bc8c715b0
 URL:		http://www.proxmox.com/cms_proxmox/en/virtualization/openvz/vzdump/
